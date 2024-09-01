@@ -16,8 +16,6 @@ def user_calculation_choice():
         print("the sum is",add_number_to_calc - add_second_number_to_calc)
     elif user_calc_operation_choice == "*":
         print("the sum is",add_number_to_calc * add_second_number_to_calc)
-    #elif user_calc_operation_choice == "/":
-        #print("the sum is",add_number_to_calc / add_second_number_to_calc)
     elif user_calc_operation_choice == "/":
         if add_second_number_to_calc == 0:
          print("division by zero is an error")
