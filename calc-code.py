@@ -12,15 +12,17 @@ def user_calculation_choice():
     add_second_number_to_calc=int(input("pick second_number"))
     if user_calc_operation_choice == "+":
         print("the sum is",add_number_to_calc + add_second_number_to_calc)
-    if user_calc_operation_choice == "-":
+    elif user_calc_operation_choice == "-":
         print("the sum is",add_number_to_calc - add_second_number_to_calc)
-    if user_calc_operation_choice == "*":
+    elif user_calc_operation_choice == "*":
         print("the sum is",add_number_to_calc * add_second_number_to_calc)
-    if user_calc_operation_choice == "/":
-        print("the sum is",add_number_to_calc / add_second_number_to_calc)
-    if  add_second_number_to_calc == 0 :
-        print("division by zero is an error")
-
+    #elif user_calc_operation_choice == "/":
+        #print("the sum is",add_number_to_calc / add_second_number_to_calc)
+    elif user_calc_operation_choice == "/":
+        if add_second_number_to_calc == 0:
+         print("division by zero is an error")
+    else:
+        print("pick the right operator ")
 user_greeting()
 asking_user_name_and_greet()
 user_calculation_choice()
